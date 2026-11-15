@@ -1,0 +1,6 @@
+
+fastapi
+uvicorn
+pillow
+argon2-cffi
+email-validator

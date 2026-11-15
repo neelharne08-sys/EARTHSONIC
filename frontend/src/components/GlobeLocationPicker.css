@@ -1,0 +1,45 @@
+.earthsonic-globe-picker {
+  background: #FAF9F6;
+  border: 1px solid #DCD7CD;
+  border-radius: 22px;
+  color: #18181B;
+  padding: clamp(16px, 3vw, 26px);
+  margin-top: 20px;
+  box-shadow: 0 12px 35px rgba(24,24,27,0.06);
+}
+.earthsonic-globe-header { display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap; }
+.earthsonic-globe-header h3 {font-family:inherit;font-size:clamp(20px,2.2vw,28px);font-weight:800;letter-spacing:-.04em;margin:5px 0;color:#18181B;}
+.earthsonic-globe-header p:not(.earthsonic-globe-eyebrow){font-size:13px;line-height:1.6;color:#71717A;margin:0}
+.earthsonic-globe-eyebrow{display:flex;align-items:center;gap:7px;color:#0B3D91;font-weight:800;font-size:10px;letter-spacing:.13em;margin:0}
+.earthsonic-globe-reset{display:flex;align-items:center;gap:7px;border:1px solid #DCD7CD;border-radius:11px;padding:10px 12px;background:white;color:#0B3D91;font-size:12px;font-weight:700;cursor:pointer}
+.earthsonic-globe-reset:hover{border-color:#0B3D91}
+.earthsonic-globe-layout{display:grid;grid-template-columns:minmax(200px,1.1fr) minmax(185px,.9fr);align-items:center;gap:clamp(12px,3vw,35px);margin-top:14px}
+.earthsonic-globe-canvas-wrap{position:relative;max-width:410px;margin-inline:auto;width:100%;padding:8px;border-radius:50%;background:radial-gradient(circle,rgba(11,61,145,.1) 0%,rgba(11,61,145,.03) 65%,transparent 72%)}
+.earthsonic-globe-canvas-wrap canvas{display:block;width:100%;height:auto;aspect-ratio:1/1;border-radius:50%;touch-action:none;cursor:grab;outline-offset:2px}
+.earthsonic-globe-canvas-wrap canvas:active{cursor:grabbing}
+.earthsonic-globe-canvas-wrap canvas:focus-visible{outline:3px solid #FC3D21}
+.earthsonic-globe-hint{text-align:center;color:#71717A;font-size:9px;font-weight:700;letter-spacing:.11em;margin-top:-1px}
+.earthsonic-globe-aside{display:flex;flex-direction:column;gap:12px;min-width:0}
+.earthsonic-globe-selected{background:#EFECE6;border:1px solid #DCD7CD;border-radius:15px;padding:16px;display:flex;flex-direction:column;gap:4px}
+.earthsonic-globe-selected p{display:flex;align-items:center;gap:7px;color:#0B3D91;font-size:12px;font-weight:800;margin:0 0 5px}
+.earthsonic-globe-selected strong{font-variant-numeric:tabular-nums;font-size:clamp(18px,2vw,24px);color:#18181B;line-height:1.3}
+.earthsonic-globe-selected span{color:#71717A;font-size:11px;line-height:1.5;margin-top:7px}
+.earthsonic-globe-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.1em;color:#71717A;margin:2px 0 0}
+.earthsonic-globe-presets{display:flex;flex-wrap:wrap;gap:7px}
+.earthsonic-globe-presets button{background:white;color:#18181B;border:1px solid #DCD7CD;border-radius:9px;font-size:12px;font-weight:700;padding:9px 12px;cursor:pointer}
+.earthsonic-globe-presets button:hover,.earthsonic-globe-presets button:focus-visible{color:#0B3D91;border-color:#0B3D91;outline-offset:2px}
+.earthsonic-globe-precise{border-top:1px solid #DCD7CD;padding-top:11px}
+.earthsonic-globe-precise summary{cursor:pointer;color:#0B3D91;font-size:12px;font-weight:700}
+.earthsonic-globe-precise form{margin-top:12px;display:grid;gap:10px}
+.earthsonic-globe-precise label{display:grid;gap:5px;color:#18181B;font-size:12px;font-weight:700}
+.earthsonic-globe-precise input{background:#fff;color:#18181B;border:1px solid #DCD7CD;border-radius:8px;padding:8px;width:100%}
+.earthsonic-globe-precise button{background:#FC3D21;border:none;color:#18181B;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:10px;font-size:12px;font-weight:800;cursor:pointer}
+.earthsonic-globe-error{color:#B91C1C;font-size:12px}
+.earthsonic-globe-footnote{font-size:11px;line-height:1.5;color:#71717A;margin:0}
+@media(max-width:620px){.earthsonic-globe-layout{grid-template-columns:1fr}.earthsonic-globe-canvas-wrap{max-width:320px}.earthsonic-globe-selected strong{font-size:19px}.earthsonic-globe-header{gap:10px}}
+
+/* Step 40 NASA Blue Marble country labels */
+.earthsonic-globe-header-actions{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.earthsonic-globe-label-toggle{background:#ffffff;color:#0B3D91;border:1px solid #DCD7CD;border-radius:11px;padding:10px 12px;font-size:12px;font-weight:700;cursor:pointer}
+.earthsonic-globe-label-toggle:hover,.earthsonic-globe-label-toggle:focus-visible{border-color:#0B3D91;outline-offset:2px}
+.earthsonic-globe-canvas-wrap canvas{box-shadow:0 0 32px -18px rgba(26,118,208,.48);}

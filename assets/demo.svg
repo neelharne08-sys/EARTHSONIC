@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <defs>
+    <linearGradient id="sea"><stop stop-color="#030a16"/><stop offset=".55" stop-color="#10253c"/><stop offset="1" stop-color="#030a16"/></linearGradient>
+    <linearGradient id="band"><stop stop-color="#152645"/><stop offset=".2" stop-color="#426884"/><stop offset=".4" stop-color="#a2d8cc"/><stop offset=".6" stop-color="#294a63"/><stop offset=".8" stop-color="#ecb06e"/><stop offset="1" stop-color="#25476d"/></linearGradient>
+  </defs>
+  <rect width="1000" height="440" fill="url(#sea)"/>
+  <rect x="50" y="92" width="900" height="255" rx="12" fill="url(#band)" opacity=".7"/>
+  <g fill="none" stroke="#e0fff1" opacity=".2">
+    <path d="M50 140H950M50 192H950M50 244H950M50 296H950M200 92V347M350 92V347M500 92V347M650 92V347M800 92V347"/>
+  </g>
+  <g fill="#071224" font-family="Arial,sans-serif" font-weight="bold"><text x="500" y="226" text-anchor="middle" font-size="42">ILLUSTRATIVE TEST FRAME</text><text x="500" y="263" text-anchor="middle" font-size="20">NOT NASA SCIENCE DATA</text></g>
+  <g fill="#8ea8c2" font-family="Arial,sans-serif" font-size="15" letter-spacing="2"><text x="50" y="51">TEAM VERTEX / SONIFICATION PROTOTYPE</text><text x="50" y="392">BRIGHTER IMAGE SLICES ARE MAPPED TO HIGHER PITCHES</text></g>
+</svg>

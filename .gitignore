@@ -1,0 +1,12 @@
+
+.DS_Store
+Thumbs.db
+.env
+.env.*
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+backend/data/*.sqlite3
+backend/data/*.sqlite3-*

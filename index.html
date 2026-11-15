@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071021">
+  <meta name="description" content="EarthPulse: Team Vertex's NASA Space Apps 2026 Earth Information Jukebox prototype.">
+  <title>EarthPulse | Team Vertex</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <a href="#home" class="brand"><span class="brand-mark">◉</span><span>EARTH<span class="brand-accent">PULSE</span></span></a>
+      <span class="top-label">NASA SPACE APPS 2026 <span class="top-divider">/</span> TEAM VERTEX</span>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="eyebrow"><span class="live-dot"></span> THE EARTH INFORMATION JUKEBOX · PS 14</div>
+        <h1>Hear what our<br><em>planet is showing.</em></h1>
+        <p>Explore visual patterns in NASA Earth Information Center imagery through real-time, data-driven sound. Each change you hear corresponds to a measured feature of the selected visual frame.</p>
+        <div class="hero-links"><a class="text-link" href="https://svs.gsfc.nasa.gov/5313/" target="_blank" rel="noopener noreferrer">Explore our NASA EIC image source ↗</a></div>
+      </section>
+
+      <section class="panel source-panel" aria-label="Source selection">
+        <div class="panel-heading"><span class="panel-kicker">01 / DATA INPUT</span><span id="sourceBadge" class="source-badge demo">SIMULATED DEMO</span></div>
+        <div class="source-actions">
+          <button id="demoButton" class="chip active" type="button">Built-in demonstration</button>
+          <button id="nasaButton" class="chip" type="button">Load NASA EIC frame</button>
+          <label class="chip upload-chip" for="fileInput">Upload EIC image <span>↗</span></label>
+          <input id="fileInput" type="file" accept="image/*" hidden>
+        </div>
+        <p id="sourceNote" class="source-note">The built-in frame is illustrative, NOT a NASA visualization. Download the authentic NASA image to activate scientific-source mode.</p>
+      </section>
+
+      <section class="experience-grid">
+        <article class="panel image-panel">
+          <div class="panel-heading"><span class="panel-kicker">02 / VISUAL FRAME</span><span class="tiny-metadata">LEFT → RIGHT SCAN</span></div>
+          <div class="image-stage">
+            <img id="visualImage" src="assets/demo.svg" alt="Illustrative simulated Earth observation frame; not real NASA data">
+            <div id="scanMarker" class="scan-marker" aria-hidden="true"></div>
+            <div class="image-corner">VISUAL → AUDIO</div>
+          </div>
+          <div class="image-meta"><span id="frameTitle">Illustrative demonstration</span><span id="frameDetails">Local example</span></div>
+        </article>
+        <article class="panel sound-panel">
+          <div class="panel-heading"><span class="panel-kicker">03 / LIVE SONIFICATION</span><span class="tiny-metadata">WEB AUDIO ENGINE</span></div>
+          <div class="sound-visual">
+            <div class="sound-rings" aria-hidden="true"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="center-core" id="centerCore"></div></div>
+            <p id="playbackState" class="sound-state" aria-live="polite">READY TO LISTEN</p>
+          </div>
+          <div class="metrics">
+            <div><span class="metric-label">RELATIVE BRIGHTNESS</span><strong id="brightnessValue">--</strong></div>
+            <div><span class="metric-label">AUDIO FREQUENCY</span><strong id="frequencyValue">-- Hz</strong></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel controls-panel">
+        <div class="panel-heading"><span class="panel-kicker">04 / CONTROL ROOM</span><span class="tiny-metadata">INTERACTIVE SCAN</span></div>
+        <canvas id="signalPlot" width="1100" height="160" role="img" aria-label="Graph of relative image brightness sampled from left to right"></canvas>
+        <div class="slider-head"><label for="positionInput">SCAN POSITION</label><output id="positionLabel" for="positionInput">0%</output></div>
+        <input id="positionInput" class="range" type="range" min="0" max="100" value="0" step="1">
+        <div class="button-row">
+          <button id="playButton" class="primary-button" type="button">▶ <span>PLAY SONIFICATION</span></button>
+          <button id="stopButton" class="secondary-button" type="button">■ STOP</button>
+          <span class="help-text">Headphones recommended · Audio starts only when you press Play</span>
+        </div>
+      </section>
+
+      <section class="explain-grid">
+        <article class="panel info-panel"><span class="panel-kicker">05 / WHAT YOU HEAR</span><h2>Sound that follows the image.</h2><p>Our first prototype samples average visible-pixel brightness in vertical slices of the image. The brightness is normalized for the current image and mapped to an audible frequency. Brighter slices produce higher tones.</p><p><strong>Scientific honesty:</strong> This is an image-feature sonification, not a direct measurement of radiance, climate change, population, or light pollution.</p></article>
+        <article class="panel info-panel"><span class="panel-kicker">06 / NASA CONNECTION</span><h2>Grounded in an actual EIC visual.</h2><p>The intended NASA input is <em>Change in Night Lights between 2012 and 2023 — EIC Version</em>, created by NASA's Scientific Visualization Studio using Black Marble/VIIRS night-light observations.</p><a href="https://svs.gsfc.nasa.gov/5313/" target="_blank" rel="noopener noreferrer" class="text-link">View NASA visualization &amp; source credits ↗</a></article>
+      </section>
+    </main>
+
+    <footer><span>EARTHPULSE / TEAM VERTEX</span><span>NASA SPACE APPS CHALLENGE · NAGPUR · 2026</span><span>Built by humans, with disclosed AI assistance</span></footer>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+:root{--es-cream:#FAF9F6;--es-stone:#EFECE6;--es-ink:#18181B;--es-muted:#71717A;--es-line:#DCD7CD;--es-nasa:#FC3D21;--es-cobalt:#0B3D91;--es-gold:#D97706;}
+html{scroll-behavior:smooth;scroll-padding-top:105px;}
+body{background:var(--es-cream)!important;color:var(--es-ink)!important;font-family:'Plus Jakarta Sans',Inter,system-ui,sans-serif;}
+.es-home,.es-home h1,.es-home h2,.es-home h3,.es-home p{color:var(--es-ink);}
+.es-container{width:min(100% - 48px,1220px);margin-inline:auto;}
+.es-kicker{font:800 11px/1.4 ui-monospace,monospace;letter-spacing:.14em;color:var(--es-nasa)!important;margin-bottom:15px;}
+.es-section-heading{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px;}
+.es-section-heading h2,.es-science-preview__story h2,.es-final-cta h2{font:800 clamp(32px,3.9vw,57px)/1.12 'Space Grotesk','Plus Jakarta Sans',sans-serif;letter-spacing:-.052em;color:var(--es-ink)!important;}
+.es-section-heading p:not(.es-kicker){font-size:15px;line-height:1.7;color:var(--es-muted)!important;margin-top:11px;max-width:615px;}
+.es-text-link{display:inline-flex;gap:8px;align-items:center;color:var(--es-cobalt)!important;font-size:13px;font-weight:750;text-decoration:none;border:0;background:transparent;white-space:nowrap;cursor:pointer;}
+.es-text-link:hover{text-decoration:underline;text-underline-offset:4px;}
+.es-button{display:inline-flex;align-items:center;justify-content:center;gap:13px;padding:15px 23px;border-radius:12px;font-size:14px;font-weight:800;min-height:51px;cursor:pointer;transition:transform .18s,box-shadow .18s;}
+.es-button:hover{transform:translateY(-2px);box-shadow:0 9px 22px rgba(24,24,27,.11);}
+.es-button--red{background:#FC3D21!important;border:1px solid #FC3D21;color:#18181B!important;}
+.es-button--red :is(svg,span){color:#18181B!important;}
+.es-button--cobalt{background:#0B3D91!important;border:1px solid #0B3D91;color:white!important;}
+.es-button--cobalt :is(svg,span){color:white!important;}
+.es-button--outline{background:white!important;border:1px solid #DCD7CD;color:#18181B!important;}
+.es-button--outline :is(svg,span){color:#0B3D91!important;}
+.es-journey{padding:86px 0 88px;background:#fff;border-bottom:1px solid var(--es-line);}
+.es-journey__aside{max-width:240px!important;margin:0!important;font-size:13px!important;color:var(--es-muted)!important;}
+.es-journey__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;}
+.es-step{padding:28px;border:1px solid var(--es-line);border-radius:20px;background:#FAF9F6;position:relative;min-height:228px;transition:transform .22s,box-shadow .22s;}
+.es-step:hover{transform:translateY(-5px);box-shadow:0 15px 42px rgba(24,24,27,.08);}
+.es-step__top{display:flex;align-items:center;justify-content:space-between;color:var(--es-cobalt);margin-bottom:38px;}
+.es-step__top span{font:800 12px ui-monospace,monospace;letter-spacing:.1em;color:var(--es-nasa);}
+.es-step h3{font-size:22px;font-weight:800;letter-spacing:-.035em;color:var(--es-ink)!important;}
+.es-step p{margin-top:10px;font-size:13px;color:var(--es-muted)!important;line-height:1.7;}
+.es-science-slot{scroll-margin-top:100px;background:#FAF9F6;}
+.es-science-slot>.es-container{padding-top:75px;padding-bottom:75px;}
+.es-science-preview{scroll-margin-top:100px;padding:90px 0;background:#FAF9F6;border-bottom:1px solid var(--es-line);}
+.es-science-preview__grid{display:grid;grid-template-columns:minmax(0,.83fr) minmax(0,1.17fr);gap:8%;align-items:center;}
+.es-science-preview__story h2{max-width:510px;}
+.es-science-preview__story>p:not(.es-kicker):not(.es-science-preview__note){font-size:16px;line-height:1.75;color:#52525B!important;margin:22px 0;max-width:490px;}
+.es-science-preview__facts{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0 27px;}
+.es-science-preview__facts span{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:650;color:#0B3D91;}
+.es-science-preview__signin{display:flex;margin-top:15px;}
+.es-science-preview__note{display:flex;gap:8px;align-items:center;color:#71717A!important;font-size:12px;margin-top:26px;}
+.es-climate-card{border:1px solid #DCD7CD;border-radius:24px;background:#fff;box-shadow:0 20px 70px rgba(24,24,27,.065);padding:29px;min-width:0;}
+.es-climate-card__top{display:flex;justify-content:space-between;align-items:start;gap:12px;}
+.es-climate-card__top p{font:800 10px ui-monospace,monospace;letter-spacing:.13em;color:#0B3D91!important;}
+.es-climate-card__top h3{font:800 28px 'Space Grotesk',sans-serif;letter-spacing:-.05em;margin-top:8px;}
+.es-climate-card__lock{display:inline-flex;align-items:center;gap:5px;background:#EFECE6;border:1px solid #DCD7CD;border-radius:20px;color:#71717A;font:700 11px ui-monospace,monospace;padding:7px 9px;white-space:nowrap;}
+.es-climate-card__variables{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:28px;}
+.es-climate-card__variable{display:flex;flex-direction:column;gap:10px;padding:15px 12px;border-radius:13px;border:1px solid #DCD7CD;background:#FAF9F6;color:#0B3D91;}
+.es-climate-card__variable--red{color:#FC3D21;}.es-climate-card__variable--gold{color:#D97706;}
+.es-climate-card__variable span{font-size:12px;font-weight:800;color:#18181B;}
+.es-climate-card__variable small{display:block;color:#71717A;font-size:11px;font-weight:500;margin-top:3px;}
+.es-climate-card__wave{height:138px;display:flex;align-items:end;justify-content:space-between;gap:5px;margin-top:20px;padding:16px 13px 0;background:linear-gradient(180deg,#FAF9F6,#F1F3F6);border:1px solid #DCD7CD;border-radius:15px;}
+.es-climate-card__wave i{flex:1;max-width:20px;border-radius:4px 4px 0 0;background:linear-gradient(180deg,#0B3D91,#7198D5);}
+.es-climate-card__wave i:nth-child(3n){background:linear-gradient(180deg,#FC3D21,#F4B0A4);}
+.es-climate-card__wave i:nth-child(5n){background:linear-gradient(180deg,#D97706,#E7BD83);}
+.es-climate-card__disclaimer{font-size:10px;color:#71717A!important;margin-top:11px;}
+.es-climate-card__action{width:100%;margin-top:23px;display:flex;align-items:center;justify-content:center;gap:9px;font-size:13px;font-weight:800;color:white!important;background:#0B3D91!important;border-radius:11px;padding:13px 10px;}
+.es-climate-card__action :is(svg,span){color:white!important;}
+.es-stations{background:white;padding:85px 0 90px;scroll-margin-top:90px;}
+.es-filterbar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--es-line);}
+.es-filterbar__categories{display:flex;align-items:center;flex-wrap:wrap;gap:7px;}
+.es-filterbar__categories button{background:#FAF9F6!important;border:1px solid #DCD7CD;color:#52525B!important;border-radius:100px;padding:10px 15px;font-size:12px;font-weight:700;cursor:pointer;}
+.es-filterbar__categories button[aria-pressed=true]{background:#0B3D91!important;color:#fff!important;border-color:#0B3D91;}
+.es-filterbar__search{display:flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid #DCD7CD;border-radius:12px;background:#FAF9F6;color:#71717A;min-width:210px;}
+.es-filterbar__search input{flex:1;min-width:0;width:100%;background:transparent!important;border:0!important;outline:none;color:#18181B!important;font-size:12px;padding:4px 0!important;}
+.es-results{font:700 11px ui-monospace,monospace;color:#71717A!important;letter-spacing:.07em;margin:18px 0;}
+.es-station-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:19px;}
+.es-station{background:#FAF9F6;border:1px solid #DCD7CD;border-radius:21px;overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;display:flex;flex-direction:column;min-width:0;}
+.es-station:hover{transform:translateY(-5px);box-shadow:0 17px 35px rgba(24,24,27,.09);border-color:#B8B0A1;}
+.es-station--selected{border-color:#0B3D91;box-shadow:0 0 0 2px rgba(11,61,145,.08);}
+.es-station__image-button{height:auto;aspect-ratio:16/9;position:relative;display:block;width:100%;overflow:hidden;background:#DCD7CD;text-align:left;cursor:pointer;}
+.es-station__image-button img{height:100%;width:100%;object-fit:cover;transition:transform .7s;}
+.es-station:hover .es-station__image-button img{transform:scale(1.055);}
+.es-station__image-label{position:absolute;bottom:14px;left:15px;right:46px;max-width:max-content;border-radius:6px;padding:7px 9px;font:750 10px/1.3 ui-monospace,monospace;background:rgba(255,255,255,.94);color:#18181B;border:1px solid #DCD7CD;}
+.es-station__image-arrow{position:absolute;right:13px;bottom:13px;background:#fff;color:#0B3D91;border-radius:100%;padding:7px;}
+.es-station__body{padding:22px;display:flex;flex:1;flex-direction:column;}
+.es-station__meta{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:14px;font:750 10px/1.4 ui-monospace,monospace;letter-spacing:.02em;color:#0B3D91;}
+.es-station__meta span:first-child{color:#FC3D21;}
+.es-station h3{font-size:22px;line-height:1.25;letter-spacing:-.035em;font-weight:850;color:#18181B!important;min-height:54px;}
+.es-station__description{font-size:12px;line-height:1.75;color:#71717A!important;margin-top:11px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;}
+.es-station__mapping{margin-top:21px;border-top:1px solid #DCD7CD;padding-top:15px;flex:1;}
+.es-station__mapping span{font:800 10px ui-monospace,monospace;letter-spacing:.08em;color:#D97706;}
+.es-station__mapping p{font-size:12px;line-height:1.55;color:#52525B!important;margin-top:8px;}
+.es-station__footer{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:17px;}
+.es-station__open{display:flex;align-items:center;justify-content:center;gap:7px;border-radius:9px;background:#0B3D91!important;color:#fff!important;min-height:41px;flex:1;padding:10px;font-size:12px;font-weight:800;white-space:nowrap;cursor:pointer;}
+.es-station__open :is(svg,span){color:#fff!important;}
+.es-station__listen{height:41px;width:41px;display:grid;place-items:center;border:1px solid #DCD7CD;border-radius:9px;background:#fff;color:#0B3D91!important;cursor:pointer;}
+.es-station__source{display:flex;align-items:center;gap:3px;color:#0B3D91!important;font-size:11px;font-weight:700;text-decoration:none;width:100%;margin-top:5px;}
+.es-empty{padding:30px;border:1px dashed #DCD7CD;border-radius:14px;color:#71717A!important;}
+.es-source-section{background:#EFECE6;padding:48px 0;}
+.es-scientific-details{background:#fff;border:1px solid #DCD7CD;border-radius:16px;overflow:hidden;}
+.es-scientific-details summary{display:flex;align-items:center;justify-content:space-between;gap:20px;list-style:none;cursor:pointer;padding:22px 25px;color:#18181B;}
+.es-scientific-details summary::-webkit-details-marker{display:none;}
+.es-scientific-details summary strong{display:block;font-size:19px;letter-spacing:-.03em;}
+.es-scientific-details summary small{display:block;font-size:12px;color:#71717A;margin-top:6px;}
+.es-scientific-details__table{overflow-x:auto;padding:0 18px 20px;}
+.es-scientific-details table{width:100%;min-width:680px;border-collapse:collapse;font-size:12px;line-height:1.6;text-align:left;}
+.es-scientific-details th,.es-scientific-details td{padding:13px 11px;border-bottom:1px solid #DCD7CD;color:#52525B;}
+.es-scientific-details th{background:#EFECE6;color:#18181B;font-weight:800;}
+.es-scientific-details a{display:inline-flex;gap:5px;align-items:center;white-space:nowrap;color:#0B3D91;}
+.es-final-cta{background:#0B3D91;padding:64px 0;}
+.es-final-cta__inner{display:flex;justify-content:space-between;align-items:center;gap:28px;}
+.es-final-cta h2{color:white!important;font-size:clamp(30px,3.4vw,50px);}
+.es-final-cta p:not(.es-kicker){color:#DCE7F8!important;margin-top:9px;font-size:14px;line-height:1.6;max-width:540px;}
+.es-final-cta .es-kicker{color:#FCAB9D!important;}
+.es-footer{background:#FAF9F6;padding:26px 0;border-top:1px solid #DCD7CD;}
+.es-footer>.es-container{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;font-size:11px;color:#71717A;}
+.es-footer span{display:inline-flex;align-items:center;gap:5px;}.es-footer strong{color:#18181B;letter-spacing:.14em;}
+.editorial-navbar{box-shadow:0 4px 23px rgba(24,24,27,.045)!important;border-bottom:1px solid #DCD7CD!important;background:rgba(250,249,246,.96)!important;}
+.editorial-navbar>div{max-width:1220px;}
+.editorial-navbar button[aria-label="Earthsonic Home"] .bg-clip-text{background:none!important;color:#18181B!important;-webkit-text-fill-color:#18181B!important;font-family:'Space Grotesk',sans-serif;letter-spacing:-.035em;}
+.editorial-navbar button[aria-label="Earthsonic Home"]>div:first-child{border-radius:100%!important;background:#0B3D91!important;border-color:#0B3D91!important;}
+.editorial-navbar button[aria-label="Earthsonic Home"]>div:first-child svg{color:#fff!important;}
+.editorial-navbar nav button{box-shadow:none!important;border-radius:10px!important;}
+.editorial-navbar nav button[aria-label="Explore Earthsonic"],.editorial-navbar nav button[aria-label="Open Jukebox"]{font-weight:800;}
+.editorial-navbar nav button[aria-label="Open Jukebox"]{background:#0B3D91!important;color:#fff!important;border-color:#0B3D91!important;}
+.editorial-navbar nav button[aria-label="Open Jukebox"] svg{color:#fff!important;}
+.editorial-navbar nav button[aria-label="Sign Out"]{background:white!important;border-color:#DCD7CD!important;}
+.editorial-dashboard{background:#FAF9F6!important;}
+.editorial-dashboard>div{max-width:1220px;}
+.editorial-dashboard>div>section:first-child{border-radius:24px!important;box-shadow:0 8px 35px rgba(24,24,27,.05)!important;background:linear-gradient(135deg,#fff 10%,#F3F0E8 100%)!important;border:1px solid #DCD7CD!important;}
+.editorial-dashboard :is(h1,h2,h3){font-family:'Space Grotesk','Plus Jakarta Sans',sans-serif;letter-spacing:-.035em;}
+.editorial-dashboard :is(section,article)[class*="rounded-2xl"]{border-radius:17px!important;box-shadow:0 8px 24px rgba(24,24,27,.035)!important;}
+.editorial-dashboard :is(input,select,textarea){background:#fff!important;color:#18181B!important;}
+.editorial-dashboard button:not([disabled]){transition:filter .18s,transform .18s;}
+.editorial-dashboard button:not([disabled]):hover{filter:brightness(.97);}
+.editorial-jukebox{background:#FAF9F6!important;}
+.editorial-jukebox>div{max-width:1220px;}
+.editorial-jukebox :is(h1,h2,h3){font-family:'Space Grotesk','Plus Jakarta Sans',sans-serif;letter-spacing:-.03em;}
+.editorial-jukebox :is(section,article)[class*="rounded-2xl"]{border-color:#DCD7CD!important;border-radius:18px!important;box-shadow:0 8px 26px rgba(24,24,27,.045)!important;}
+.editorial-auth-panel{border-radius:24px!important;background:#FFFDF9!important;box-shadow:0 25px 70px rgba(24,24,27,.10)!important;}
+.editorial-auth-panel :is(h1,h2){font-family:'Space Grotesk','Plus Jakarta Sans',sans-serif;letter-spacing:-.04em;}
+.editorial-auth-panel input{min-height:49px;border-radius:11px!important;}
+.editorial-science{border:1px solid #DCD7CD!important;border-radius:22px!important;box-shadow:0 15px 38px rgba(24,24,27,.07)!important;}
+body :is(button,a,input,textarea,select):focus-visible{outline:3px solid #0B3D91!important;outline-offset:3px;}
+@media(max-width:1080px){.es-station-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.es-science-preview__grid{gap:4%;}}
+@media(max-width:760px){.es-container{width:min(100% - 32px,1220px);}.es-section-heading{align-items:start;flex-direction:column;}.es-journey{padding:58px 0;}.es-journey__grid{grid-template-columns:1fr;}.es-step{min-height:170px;}.es-step__top{margin-bottom:24px;}.es-science-preview{padding:62px 0;}.es-science-preview__grid{grid-template-columns:1fr;gap:36px;}.es-stations{padding:60px 0;}.es-station-grid{grid-template-columns:1fr;}.es-filterbar{flex-direction:column;}.es-filterbar__search{width:100%;}.es-final-cta__inner{flex-direction:column;align-items:start;}.es-climate-card{padding:19px;}.es-section-heading h2{font-size:38px;}}
+@media(max-width:380px){.es-climate-card__variables{grid-template-columns:1fr;}.es-climate-card__variable{flex-direction:row;align-items:center;}.es-station__body{padding:17px;}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.es-step,.es-station,.es-button,.es-station__image-button img{transition:none!important;}.es-step:hover,.es-station:hover,.es-button:hover{transform:none!important;}}

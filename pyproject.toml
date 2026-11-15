@@ -1,0 +1,15 @@
+
+[project]
+name = "earthsonic-api"
+version = "0.1.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pillow",
+    "argon2-cffi",
+    "email-validator"
+]
+
+[tool.vercel]
+entrypoint = "backend.main:app"
